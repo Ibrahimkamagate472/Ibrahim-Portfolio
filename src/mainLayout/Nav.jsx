@@ -1,5 +1,5 @@
 import { Flex, Button, ButtonGroup, Box } from '@chakra-ui/react'
-import { useNavigate, Outlet } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function Nav() {
   const navigate = useNavigate()
@@ -21,6 +21,8 @@ export default function Nav() {
           >
             About
           </Button>
+          <Button onClick={() => navigate('/projects')}>Projects</Button>
+          <Button onClick={() => navigate('/contact')}>Contact</Button>
           <Button
             as='a'
             target='_blank'
@@ -35,9 +37,16 @@ export default function Nav() {
           >
             Linked In
           </Button>
+
+          <Button
+            as='a'
+            target='_blank'
+            href='https://ibrahimkamagate472.github.io/IbrahimResume/Resume.html'
+          >
+            Resume
+          </Button>
         </ButtonGroup>
       </Flex>
-      <Outlet />
     </Box>
   )
 }

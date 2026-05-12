@@ -1,9 +1,82 @@
-import { Box, Heading } from '@chakra-ui/react'
+import {
+  Box,
+  Heading,
+  Stack,
+  Button,
+  Link,
+  Image,
+  Center,
+} from '@chakra-ui/react'
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
+import { SiHandshake } from 'react-icons/si'
+import { MoveRight } from 'lucide-react'
 const AboutRight = () => {
   return (
-    <Box>
-      <Box>
-        <Heading>Ibrahim Kamagate</Heading>
+    <Box
+      bg='gray.300'
+      shadow='md'
+      borderWidth='2px'
+      borderColor='blackAlpha.200'
+      marginTop={10}
+    >
+      <Box spaceY='4' spaceX={2} mt={8} mb={8}>
+        <Center>
+          <Image
+            src='https://www.ledr.com/colours/black.jpg'
+            boxSize='150px'
+            borderRadius='full'
+            alignItems='center'
+            alt=''
+          />
+        </Center>
+        <Heading textAlign='center'>Ibrahim Kamagate</Heading>
+        <Link
+          href='mailto:ibrahimk3114@gmail.com'
+          display='block'
+          wordBreak='break-word'
+        >
+          ibrahimk3114@gmail.com
+        </Link>
+        <Link
+          href='mailto:ibrahim.kamagate472@myhunter.cuny.edu'
+          display='block'
+          wordBreak='break-word'
+        >
+          ibrahim.kamagate472@myhunter.cuny.edu
+        </Link>
+        <Stack direction='row'>
+          <Link
+            as='a'
+            target='_blank'
+            href='https://github.com/Ibrahimkamagate472'
+          >
+            <FaGithubSquare size={30} />
+          </Link>
+          <Link
+            as='a'
+            target='_blank'
+            href='https://linkedin.com/in/ibrahim-k-b36422264'
+          >
+            <FaLinkedin size={30} />
+          </Link>
+          <Link
+            as='a'
+            target='_blank'
+            href='https://app.joinhandshake.com/profiles/het24e'
+          >
+            <SiHandshake size={30} />
+          </Link>
+        </Stack>
+        <Button
+          as='a'
+          target='_blank'
+          href='https://ibrahimkamagate472.github.io/IbrahimResume/Resume.html'
+          variant='surface'
+          w='150px'
+        >
+          Resume
+          <MoveRight />
+        </Button>
       </Box>
     </Box>
   )

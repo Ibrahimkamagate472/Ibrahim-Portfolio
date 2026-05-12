@@ -1,8 +1,8 @@
 import { Badge, Box, Heading } from '@chakra-ui/react'
 const Skills = () => {
   return (
-    <Box mx={5}>
-      <Heading py={2}>Technical Skills</Heading>
+    <Box>
+      <Heading textAlign='center'>Technical Skills</Heading>
       <Box>
         <Heading>Languages</Heading>
         <Badge mx={1}>C++</Badge>

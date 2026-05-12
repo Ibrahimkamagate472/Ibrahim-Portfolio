@@ -1,2 +1,3 @@
-export { default as Nav } from './Nav'
+export { default as Nav } from '../mainLayout/Nav'
 export { default as Skills } from './Skills'
+export { default as AboutRight } from './AboutRight'
