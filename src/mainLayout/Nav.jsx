@@ -33,9 +33,9 @@ export default function Nav() {
             <Button variant='ghost' onClick={() => navigate('/projects')}>
               Projects
             </Button>
-            <Button variant='ghost' onClick={() => navigate('/contact')}>
+            {/* <Button variant='ghost' onClick={() => navigate('/contact')}>
               Contact
-            </Button>
+            </Button> */}
             <Button
               variant='ghost'
               as='a'

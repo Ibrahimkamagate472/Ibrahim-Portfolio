@@ -41,7 +41,7 @@ const Footer = () => {
           href='https://app.joinhandshake.com/profiles/het24e'
           _hover={{ color: 'gray.400' }}
         >
-          <SiHandshake size={30} />
+          <SiHandshake size={27} />
         </Link>
       </Flex>
     </Box>

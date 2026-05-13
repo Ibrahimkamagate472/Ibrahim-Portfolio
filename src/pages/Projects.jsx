@@ -19,7 +19,7 @@ const Projects = () => {
             Job Tacker
           </Heading>
         </Link>
-        <Stack direction='row'>
+        <Stack direction='row' pb={2}>
           <Badge>JavaScript</Badge>
           <Badge>React</Badge>
           <Badge>Express.js</Badge>
@@ -28,24 +28,24 @@ const Projects = () => {
           <Badge>PostgreSQL</Badge>
           <Badge>Chakra UI</Badge>
         </Stack>
-        <Text textIndent='20px'>
+        <Text textIndent='20px' fontWeight='medium'>
           A full-stack job tracking platform designed to help users efficiently
           manage their job search process in one centralized dashboard.
         </Text>
-        <Text>
+        <Text textIndent='20px' fontWeight='medium'>
           Users can create an account and securely log in to manage their
           personal job applications. Each job entry includes key details such as
           company name, position, application date, current status, job listing
           link, and optional credentials (username and password) for external
           job portals.
         </Text>
-        <Text>
+        <Text textIndent='20px' fontWeight='medium'>
           The application allows users to: Add new job applications Edit and
           update existing applications Delete applications Track and update the
           status of each application (e.g., applied, interviewing, offer,
           rejected)
         </Text>
-        <Text>
+        <Text textIndent='20px' fontWeight='medium'>
           This project demonstrates full CRUD functionality, user
           authentication, and state management, providing a practical tool for
           organizing and monitoring job search progress.
@@ -62,7 +62,7 @@ const Projects = () => {
         </Link>
         <br />
         <Badge>C++</Badge>
-        <Text textIndent='20px'>
+        <Text textIndent='20px' pt={2} fontWeight='medium'>
           Developed a social network simulation that models Facebook-style
           friendships using an unordered map as the core graph structure. Each
           user profile stores personal details (first name, last name, school,
@@ -85,7 +85,7 @@ const Projects = () => {
         </Link>
         <br />
         <Badge>C++</Badge>
-        <Text textIndent='20px'>
+        <Text textIndent='20px' pt={2} pb={10} fontWeight='medium'>
           Built a password manager that securely stores and preserves account
           credentials through file read/write operations. Implemented full
           account management functionality, including adding, removing,

@@ -46,43 +46,45 @@ const AboutRight = () => {
         >
           ibrahim.kamagate472@myhunter.cuny.edu
         </Link>
-        <Stack direction='row'>
-          <Link
-            as='a'
-            target='_blank'
-            href='https://github.com/Ibrahimkamagate472'
-            _hover={{ color: 'gray.400' }}
-          >
-            <FaGithubSquare size={30} />
-          </Link>
-          <Link
-            as='a'
-            target='_blank'
-            href='https://linkedin.com/in/ibrahim-k-b36422264'
-            _hover={{ color: 'gray.400' }}
-          >
-            <FaLinkedin size={30} />
-          </Link>
-          <Link
-            as='a'
-            target='_blank'
-            href='https://app.joinhandshake.com/profiles/het24e'
-            _hover={{ color: 'gray.400' }}
-          >
-            <SiHandshake size={27} />
-          </Link>
-        </Stack>
-        <Button
-          as='a'
-          target='_blank'
-          href='https://ibrahimkamagate472.github.io/IbrahimResume/Resume.html'
-          variant='surface'
-          w='150px'
-          _hover={{ color: 'gray.400' }}
-        >
-          Resume
-          <MoveRight />
-        </Button>
+        <Center>
+          <Stack direction='row'>
+            <Link
+              as='a'
+              target='_blank'
+              href='https://github.com/Ibrahimkamagate472'
+              _hover={{ color: 'gray.400' }}
+            >
+              <FaGithubSquare size={30} />
+            </Link>
+            <Link
+              as='a'
+              target='_blank'
+              href='https://linkedin.com/in/ibrahim-k-b36422264'
+              _hover={{ color: 'gray.400' }}
+            >
+              <FaLinkedin size={30} />
+            </Link>
+            <Link
+              as='a'
+              target='_blank'
+              href='https://app.joinhandshake.com/profiles/het24e'
+              _hover={{ color: 'gray.400' }}
+            >
+              <SiHandshake size={27} />
+            </Link>
+            <Button
+              as='a'
+              target='_blank'
+              href='https://ibrahimkamagate472.github.io/IbrahimResume/Resume.html'
+              variant='ghost'
+              w='100px'
+              _hover={{ color: 'gray.400' }}
+            >
+              Resume
+              <MoveRight />
+            </Button>
+          </Stack>
+        </Center>
       </Box>
     </Box>
   )
