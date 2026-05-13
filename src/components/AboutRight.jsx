@@ -34,6 +34,7 @@ const AboutRight = () => {
           href='mailto:ibrahimk3114@gmail.com'
           display='block'
           wordBreak='break-word'
+          _hover={{ color: 'gray.400' }}
         >
           ibrahimk3114@gmail.com
         </Link>
@@ -41,6 +42,7 @@ const AboutRight = () => {
           href='mailto:ibrahim.kamagate472@myhunter.cuny.edu'
           display='block'
           wordBreak='break-word'
+          _hover={{ color: 'gray.400' }}
         >
           ibrahim.kamagate472@myhunter.cuny.edu
         </Link>
@@ -49,6 +51,7 @@ const AboutRight = () => {
             as='a'
             target='_blank'
             href='https://github.com/Ibrahimkamagate472'
+            _hover={{ color: 'gray.400' }}
           >
             <FaGithubSquare size={30} />
           </Link>
@@ -56,6 +59,7 @@ const AboutRight = () => {
             as='a'
             target='_blank'
             href='https://linkedin.com/in/ibrahim-k-b36422264'
+            _hover={{ color: 'gray.400' }}
           >
             <FaLinkedin size={30} />
           </Link>
@@ -63,8 +67,9 @@ const AboutRight = () => {
             as='a'
             target='_blank'
             href='https://app.joinhandshake.com/profiles/het24e'
+            _hover={{ color: 'gray.400' }}
           >
-            <SiHandshake size={30} />
+            <SiHandshake size={27} />
           </Link>
         </Stack>
         <Button
@@ -73,6 +78,7 @@ const AboutRight = () => {
           href='https://ibrahimkamagate472.github.io/IbrahimResume/Resume.html'
           variant='surface'
           w='150px'
+          _hover={{ color: 'gray.400' }}
         >
           Resume
           <MoveRight />

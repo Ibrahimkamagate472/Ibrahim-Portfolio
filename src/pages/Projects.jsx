@@ -1,10 +1,23 @@
-import { Box, Text, Heading, Link, Badge, Stack } from '@chakra-ui/react'
+import {
+  Box,
+  Text,
+  Heading,
+  Link,
+  Badge,
+  Stack,
+  Container,
+} from '@chakra-ui/react'
 const Projects = () => {
   return (
-    <Box>
-      <Box>
-        <Link href='https://github.com/Ibrahimkamagate472/Phonebook-Management-System-'>
-          <Heading>Job Tacker</Heading>
+    <Box backgroundColor='gray.200' minH='100vh'>
+      <Box pt={10} px={5}>
+        <Link
+          href='https://github.com/Ibrahimkamagate472/Phonebook-Management-System-'
+          target='_blank'
+        >
+          <Heading pb={5} textDecoration='underline'>
+            Job Tacker
+          </Heading>
         </Link>
         <Stack direction='row'>
           <Badge>JavaScript</Badge>
@@ -38,10 +51,16 @@ const Projects = () => {
           organizing and monitoring job search progress.
         </Text>
       </Box>
-      <Box>
-        <Link href='https://github.com/Ibrahimkamagate472/Phonebook-Management-System-'>
-          <Heading>Network</Heading>
+      <Box pt={10} px={5}>
+        <Link
+          href='https://github.com/Ibrahimkamagate472/Phonebook-Management-System-'
+          target='_blank'
+        >
+          <Heading pb={5} textDecoration='underline'>
+            Network
+          </Heading>
         </Link>
+        <br />
         <Badge>C++</Badge>
         <Text textIndent='20px'>
           Developed a social network simulation that models Facebook-style
@@ -55,10 +74,16 @@ const Projects = () => {
           structures, pointers, and object-oriented design.
         </Text>
       </Box>
-      <Box>
-        <Link href='https://github.com/Ibrahimkamagate472/Password-Manager'>
-          <Heading>Password Manager</Heading>
+      <Box pt={10} px={5}>
+        <Link
+          href='https://github.com/Ibrahimkamagate472/Password-Manager'
+          target='_blank'
+        >
+          <Heading pb={5} textDecoration='underline'>
+            Password Manager
+          </Heading>
         </Link>
+        <br />
         <Badge>C++</Badge>
         <Text textIndent='20px'>
           Built a password manager that securely stores and preserves account

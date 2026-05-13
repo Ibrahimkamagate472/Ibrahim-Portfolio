@@ -2,7 +2,7 @@ import { Box, SimpleGrid, Heading, Text, GridItem } from '@chakra-ui/react'
 import { Skills, AboutRight } from '../components/index'
 const About = () => {
   return (
-    <Box>
+    <Box backgroundColor='gray.200'>
       <SimpleGrid
         columns={{ base: 2, md: 4 }}
         gap={{ base: '24px', md: '40px' }}
