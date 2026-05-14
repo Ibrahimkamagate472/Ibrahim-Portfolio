@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Ibrahimkamagate472/Portfolio",
+  "homepage": "https://ibrahimkamagate472.github.io/ibrahim-portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

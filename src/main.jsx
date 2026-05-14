@@ -6,7 +6,7 @@ import { ChakraProvider, defaultSystem } from '@chakra-ui/react'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/ibrahim-portfolio'>
       <ChakraProvider value={defaultSystem}>
         <App />
       </ChakraProvider>
