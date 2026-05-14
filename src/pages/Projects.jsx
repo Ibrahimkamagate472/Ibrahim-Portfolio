@@ -12,7 +12,7 @@ const Projects = () => {
     <Box backgroundColor='gray.200' minH='100vh'>
       <Box pt={10} px={5}>
         <Link
-          href='https://github.com/Ibrahimkamagate472/Phonebook-Management-System-'
+          href='https://github.com/Ibrahimkamagate472/Job-Tracker'
           target='_blank'
         >
           <Heading pb={5} textDecoration='underline'>
@@ -53,7 +53,7 @@ const Projects = () => {
       </Box>
       <Box pt={10} px={5}>
         <Link
-          href='https://github.com/Ibrahimkamagate472/Phonebook-Management-System-'
+          href='https://github.com/Ibrahimkamagate472/Network'
           target='_blank'
         >
           <Heading pb={5} textDecoration='underline'>
@@ -72,6 +72,25 @@ const Projects = () => {
           network-level operations for lookup, profile management, and
           relationship management, demonstrating strong understanding of data
           structures, pointers, and object-oriented design.
+        </Text>
+      </Box>
+      <Box pt={10} px={5}>
+        <Link
+          href='https://github.com/Ibrahimkamagate472/Phonebook-Management-System-'
+          target='_blank'
+        >
+          <Heading pb={5} textDecoration='underline'>
+            Phonebook Management System
+          </Heading>
+        </Link>
+        <br />
+        <Badge>C++</Badge>
+        <Text textIndent='20px' pt={2} fontWeight='medium'>
+          Designed and implemented a modular phonebook application using a hash
+          table for efficient data storage and retrieval. The Phonebook
+          Management System supports insertion, deletion, updating of previous
+          entries, searching, and file preservation while handling collisions
+          and lazy deletion.
         </Text>
       </Box>
       <Box pt={10} px={5}>
