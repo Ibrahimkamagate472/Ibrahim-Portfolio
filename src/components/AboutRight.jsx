@@ -14,10 +14,9 @@ const AboutRight = () => {
   return (
     <Box
       bg='gray.300'
-      shadow='md'
+      shadow='lg'
       borderWidth='2px'
       borderColor='blackAlpha.200'
-      marginTop={10}
     >
       <Box spaceY='4' spaceX={2} mt={8} mb={8}>
         <Center>

@@ -6,15 +6,18 @@ export default function Nav() {
   return (
     <Box backgroundColor='gray.200'>
       <Center>
-        <Flex
-          justify='flex-end'
-          minw='100vh'
-          minH='auto'
-          shadow='xl'
-          borderRadius='2xl'
-        >
-          <ButtonGroup marginRight={5} my={1} variant='surface' padding={2}>
+        <Flex shadow='xl' borderRadius='2xl'>
+          <ButtonGroup
+            marginRight={0}
+            my={1}
+            variant='surface'
+            padding={2}
+            display='flex'
+            flexWrap='wrap'
+            justifyContent='center'
+          >
             <Button
+              size={{ base: 'xs', md: 'md' }}
               variant='ghost'
               onClick={() => {
                 navigate('/')
@@ -23,6 +26,7 @@ export default function Nav() {
               Home
             </Button>
             <Button
+              size={{ base: 'xs', md: 'md' }}
               variant='ghost'
               onClick={() => {
                 navigate('/about')
@@ -30,13 +34,18 @@ export default function Nav() {
             >
               About
             </Button>
-            <Button variant='ghost' onClick={() => navigate('/projects')}>
+            <Button
+              size={{ base: 'xs', md: 'md' }}
+              variant='ghost'
+              onClick={() => navigate('/projects')}
+            >
               Projects
             </Button>
             {/* <Button variant='ghost' onClick={() => navigate('/contact')}>
               Contact
             </Button> */}
             <Button
+              size={{ base: 'xs', md: 'md' }}
               variant='ghost'
               as='a'
               target='_blank'
@@ -45,6 +54,7 @@ export default function Nav() {
               Github
             </Button>
             <Button
+              size={{ base: 'xs', md: 'md' }}
               variant='ghost'
               as='a'
               target='_blank'
@@ -54,6 +64,7 @@ export default function Nav() {
             </Button>
 
             <Button
+              size={{ base: 'xs', md: 'md' }}
               variant='ghost'
               as='a'
               target='_blank'

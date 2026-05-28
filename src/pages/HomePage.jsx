@@ -10,7 +10,7 @@ const HomePage = () => {
               animationName: 'fade-in, scale-in',
               animationDuration: '900ms',
             }}
-            textStyle='2xl'
+            textStyle={{ base: 'md', md: '2xl' }}
           >
             Hello, I'm
           </Text>
@@ -20,7 +20,7 @@ const HomePage = () => {
               animationName: 'fade-in, scale-in',
               animationDuration: '900ms',
             }}
-            textStyle='7xl'
+            textStyle={{ base: '4xl', md: '7xl' }}
           >
             Ibrahim Kamagate
           </Heading>
@@ -30,7 +30,7 @@ const HomePage = () => {
               animationName: 'fade-in, scale-in',
               animationDuration: '900ms',
             }}
-            textStyle='2xl'
+            textStyle={{ base: 'md', md: '2xl' }}
           >
             aspiring Software Engineering
           </Text>

@@ -19,7 +19,7 @@ const Projects = () => {
             Job Tacker
           </Heading>
         </Link>
-        <Stack direction='row' pb={2}>
+        <Stack direction='row' pb={2} display='flex' flexWrap='wrap'>
           <Badge>JavaScript</Badge>
           <Badge>React</Badge>
           <Badge>Express.js</Badge>
