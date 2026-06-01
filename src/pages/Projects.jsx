@@ -6,114 +6,138 @@ import {
   Badge,
   Stack,
   Container,
+  List,
 } from '@chakra-ui/react'
 const Projects = () => {
   return (
     <Box backgroundColor='gray.200' minH='100vh'>
-      <Box pt={10} px={5}>
-        <Link
-          href='https://github.com/Ibrahimkamagate472/Job-Tracker'
-          target='_blank'
-        >
-          <Heading pb={5} textDecoration='underline'>
-            Job Tacker
-          </Heading>
-        </Link>
-        <Stack direction='row' pb={2} display='flex' flexWrap='wrap'>
-          <Badge>JavaScript</Badge>
-          <Badge>React</Badge>
-          <Badge>Express.js</Badge>
-          <Badge>Node.js</Badge>
-          <Badge>Prisma</Badge>
-          <Badge>PostgreSQL</Badge>
-          <Badge>Chakra UI</Badge>
-        </Stack>
-        <Text textIndent='20px' fontWeight='medium'>
-          A full-stack job tracking platform designed to help users efficiently
-          manage their job search process in one centralized dashboard.
-        </Text>
-        <Text textIndent='20px' fontWeight='medium'>
-          Users can create an account and securely log in to manage their
-          personal job applications. Each job entry includes key details such as
-          company name, position, application date, current status, job listing
-          link, and optional credentials (username and password) for external
-          job portals.
-        </Text>
-        <Text textIndent='20px' fontWeight='medium'>
-          The application allows users to: Add new job applications Edit and
-          update existing applications Delete applications Track and update the
-          status of each application (e.g., applied, interviewing, offer,
-          rejected)
-        </Text>
-        <Text textIndent='20px' fontWeight='medium'>
-          This project demonstrates full CRUD functionality, user
-          authentication, and state management, providing a practical tool for
-          organizing and monitoring job search progress.
-        </Text>
-      </Box>
-      <Box pt={10} px={5}>
-        <Link
-          href='https://github.com/Ibrahimkamagate472/Network'
-          target='_blank'
-        >
-          <Heading pb={5} textDecoration='underline'>
-            Network
-          </Heading>
-        </Link>
-        <br />
-        <Badge>C++</Badge>
-        <Text textIndent='20px' pt={2} fontWeight='medium'>
-          Developed a social network simulation that models Facebook-style
-          friendships using an unordered map as the core graph structure. Each
-          user profile stores personal details (first name, last name, school,
-          field) and maintains a dynamic friends list with support for adding,
-          removing, listing, and recommending connections. Implemented duplicate
-          handling to allow multiple users with the same name, along with
-          network-level operations for lookup, profile management, and
-          relationship management, demonstrating strong understanding of data
-          structures, pointers, and object-oriented design.
-        </Text>
-      </Box>
-      <Box pt={10} px={5}>
-        <Link
-          href='https://github.com/Ibrahimkamagate472/Phonebook-Management-System-'
-          target='_blank'
-        >
-          <Heading pb={5} textDecoration='underline'>
-            Phonebook Management System
-          </Heading>
-        </Link>
-        <br />
-        <Badge>C++</Badge>
-        <Text textIndent='20px' pt={2} fontWeight='medium'>
-          Designed and implemented a modular phonebook application using a hash
-          table for efficient data storage and retrieval. The Phonebook
-          Management System supports insertion, deletion, updating of previous
-          entries, searching, and file preservation while handling collisions
-          and lazy deletion.
-        </Text>
-      </Box>
-      <Box pt={10} px={5}>
-        <Link
-          href='https://github.com/Ibrahimkamagate472/Password-Manager'
-          target='_blank'
-        >
-          <Heading pb={5} textDecoration='underline'>
-            Password Manager
-          </Heading>
-        </Link>
-        <br />
-        <Badge>C++</Badge>
-        <Text textIndent='20px' pt={2} pb={10} fontWeight='medium'>
-          Built a password manager that securely stores and preserves account
-          credentials through file read/write operations. Implemented full
-          account management functionality, including adding, removing,
-          updating, and retrieving account names, usernames, and passwords.
-          Integrated a custom XOR-based encryption and decryption system to
-          simulate secure data storage and demonstrate foundational data
-          security concepts.
-        </Text>
-      </Box>
+      <Container spaceY={4} p={10}>
+        <Box spaceY={4}>
+          <Link
+            href='https://github.com/Ibrahimkamagate472/Job-Tracker'
+            target='_blank'
+          >
+            <Heading size={{ md: '3xl' }}>Job Tacker</Heading>
+          </Link>
+          <Stack direction='row' pb={2} display='flex' flexWrap='wrap'>
+            <Badge>JavaScript</Badge>
+            <Badge>React</Badge>
+            <Badge>Express.js</Badge>
+            <Badge>Node.js</Badge>
+            <Badge>Prisma</Badge>
+            <Badge>PostgreSQL</Badge>
+            <Badge>Chakra UI</Badge>
+          </Stack>
+          <List.Root fontWeight='medium' spaceY={2}>
+            <List.Item>
+              Developed a full-stack job application tracking system with secure
+              user authentication and account management.
+            </List.Item>
+            <List.Item>
+              Implemented CRUD functionality, allowing users to create, view,
+              update, and delete job applications.
+            </List.Item>
+            <List.Item>
+              Designed application records to store company name, position,
+              application date, status, job posting link, and optional portal
+              credentials.
+            </List.Item>
+            <List.Item>
+              Built status tracking features to monitor application progress
+              through stages such as Applied, Interviewing, Offer, and Rejected.
+            </List.Item>
+          </List.Root>
+        </Box>
+        <Box spaceY={4}>
+          <Link
+            href='https://github.com/Ibrahimkamagate472/Network'
+            target='_blank'
+          >
+            <Heading size={{ md: '3xl' }}>Network</Heading>
+          </Link>
+          <br />
+          <Badge>C++</Badge>
+          <List.Root fontWeight='medium' spaceY={2}>
+            <List.Item>
+              Developed a Facebook-style social network simulation using an
+              unordered map–based graph structure to manage user relationships.
+            </List.Item>
+            <List.Item>
+              Designed user profiles containing personal information and dynamic
+              friend lists with support for adding, removing, viewing, and
+              recommending connections.
+            </List.Item>
+            <List.Item>
+              Implemented duplicate-user handling, allowing multiple profiles
+              with the same name while maintaining unique user records.
+            </List.Item>
+            <List.Item>
+              Applied object-oriented programming principles, pointers, and
+              advanced data structures to model and manage complex social
+              network interactions efficiently.
+            </List.Item>
+          </List.Root>
+        </Box>
+        <Box spaceY={4}>
+          <Link
+            href='https://github.com/Ibrahimkamagate472/Phonebook-Management-System-'
+            target='_blank'
+          >
+            <Heading size={{ md: '3xl' }}>Phonebook Management System</Heading>
+          </Link>
+          <br />
+          <Badge>C++</Badge>
+          <List.Root fontWeight='medium' spaceY={2}>
+            <List.Item>
+              Designed and implemented a modular phonebook management system
+              featuring full CRUD operations, contact search functionality, and
+              file persistence.
+            </List.Item>
+            <List.Item>
+              Engineered a custom hash table with polynomial string hashing and
+              double hashing collision resolution to optimize data storage and
+              retrieval performance.
+            </List.Item>
+            <List.Item>
+              Implemented dynamic rehashing strategies based on load factor
+              thresholds, enabling efficient scaling as the dataset grows.
+            </List.Item>
+            <List.Item>
+              Utilized lazy deletion techniques to maintain hash table integrity
+              while preserving efficient search and insertion operations.
+            </List.Item>
+          </List.Root>
+        </Box>
+        <Box spaceY={4}>
+          <Link
+            href='https://github.com/Ibrahimkamagate472/Password-Manager'
+            target='_blank'
+          >
+            <Heading size={{ md: '3xl' }}>Password Manager</Heading>
+          </Link>
+          <br />
+          <Badge>C++</Badge>
+          <List.Root fontWeight='medium' spaceY={2}>
+            <List.Item>
+              Designed and implemented a password manager with secure credential
+              storage and file-based persistence.
+            </List.Item>
+            <List.Item>
+              Developed account management features for adding, updating,
+              removing, and retrieving account credentials.
+            </List.Item>
+            <List.Item>
+              Integrated a custom XOR-based encryption and decryption system to
+              protect stored data and demonstrate foundational cybersecurity
+              concepts.
+            </List.Item>
+            <List.Item>
+              Applied principles of data security, encryption, and information
+              management to ensure reliable credential handling.
+            </List.Item>
+          </List.Root>
+        </Box>
+      </Container>
     </Box>
   )
 }
